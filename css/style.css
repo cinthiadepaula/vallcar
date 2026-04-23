@@ -29,8 +29,8 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 99;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.178);
+  backdrop-filter: blur(2px);
 }
 
 header img {
@@ -468,7 +468,7 @@ footer {
     position: absolute;
     top: 7rem;
     right: -100%;
-    background: rgba(0, 0, 0, 0.466);
+    background: rgba(0, 0, 0, 0.123);
     flex-direction: column;
     width: 60%;
     height: 100vh;
