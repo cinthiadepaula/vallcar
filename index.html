@@ -1,340 +1,256 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
+    <!-- META ESSENCIAL -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VallCar - Especialistas em vidros automotivos</title>
+
+    <!-- SEO -->
+    <title>VallCar | Especialistas em Vidros Automotivos</title>
+    <meta
+      name="description"
+      content="Vidros automotivos com instalação, garantia e pagamento facilitado. Mais de 100 mil clientes atendidos."
+    />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="./assets/logo.png" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- JS -->
     <script src="./js/script.js" defer></script>
   </head>
 
   <body>
-    <!-- Cabeçalho -->
-    <header>
-      <img src="./assets/logo.png" />
-      <!-- BOTÃO HAMBURGUER -->
-      <div class="menu-toggle" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+      <div class="container header-container">
+        <img src="./assets/logo.png" alt="VallCar Logo" class="logo" />
+
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          onclick="toggleMenu()"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="navigation" id="menu" aria-label="Menu principal">
+          <a href="#hero">Home</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#beneficios">Benefícios</a>
+          <a href="#lojas">Lojas</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#contato">Contato</a>
+        </nav>
       </div>
-      <nav class="navigation" id="menu">
-        <a href="#hero">Home</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#beneficios">Benefícios</a>
-        <a href="#depoimentos">Nossas Lojas</a>
-        <a href="#contato">Contato</a>
-      </nav>
     </header>
 
-    <!-- Conteúdo principal -->
+    <!-- ================= MAIN ================= -->
     <main>
-      <!-- Hero (primeira dobra) -->
+      <!-- HERO -->
       <section id="hero" class="hero">
-        <h2>Sua solução começa aqui</h2>
-        <p>Texto direto e objetivo com proposta de valor.</p>
-        <a href="#contato" class="btn">Quero saber mais</a>
-      </section>
-
-      <!-- Sobre -->
-      <section id="sobre" class="sobre">
-        <div class="icon">
-          <div class="topic">
-            <img
-              width="50"
-              height="50"
-              src="./assets/tools.svg"
-              alt="administrative-tools"
-            />
-            <p class="topic-title">A maior variedade de peças</p>
-            <p class="topic-text">Em vidros e peças automotivas</p>
-          </div>
-
-          <div class="topic">
-            <img
-              width="50"
-              height="50"
-              src="./assets/seguro-de-automovel.svg"
-              alt="administrative-tools"
-            />
-            <p class="topic-title">Entrega e Instalação</p>
-            <p class="topic-text">
-              Compre online e instale em uma de nossas mais de 85 lojas
-            </p>
-          </div>
-
-          <div class="topic">
-            <img
-              width="50"
-              height="50"
-              src="./assets/forma-de-pagamento.svg"
-              alt="administrative-tools"
-            />
-            <p class="topic-title">Pagamento facilitado</p>
-            <p class="topic-text">Em até 10x nos cartões sem juros</p>
-          </div>
-
-          <div class="topic">
-            <img
-              width="50"
-              height="50"
-              src="./assets/garantido.svg"
-              alt="administrative-tools"
-            />
-            <p class="topic-title">Garantia de até 1 ano.</p>
-            <p class="topic-text">
-              Em peças compradas e instaladas em nossa loja.
-            </p>
-          </div>
-        </div>
-
-        <div class="text">
-          <h1>VallCar é o nome certo</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sequi
-            eligendi neque, error nemo fuga iure animi laudantium architecto sed
-            voluptate obcaecati accusantium asperiores quos ipsa labore est
-            assumenda saepe!
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sequi
-            eligendi neque, error nemo fuga iure animi laudantium architecto sed
-            voluptate obcaecati accusantium asperiores quos ipsa labore est
-            assumenda saepe!
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sequi
-            eligendi neque, error nemo fuga iure animi laudantium architecto sed
-            voluptate obcaecati accusantium asperiores quos ipsa labore est
-            assumenda saepe!
-          </p>
+        <div class="container">
+          <h1>Sua solução começa aqui</h1>
+          <p>Vidros automotivos com qualidade, garantia e agilidade.</p>
+          <a href="#contato" class="btn">Solicitar orçamento</a>
         </div>
       </section>
 
-      <!-- Benefícios -->
-      <section id="beneficios" class="beneficios">
-        <h1>O que faz de nós, destaque no setor Automotivo?</h1>
-        <div class="beneficios-topicos">
-          <article>
-            <h3>35</h3>
+      <!-- SOBRE -->
 
-            <p>Anos de <br />Experiência</p>
-          </article>
-          <img src="./assets/simbolo.svg" />
-          <article>
-            <h3>+ de 18</h3>
+      <section id="sobre" class="sobre container">
+        <div class="sobre-grid">
+          <div class="icon">
+            <article class="topic">
+              <img src="./assets/tools.svg" alt="Peças automotivas" />
+              <h3>A maior variedade de peças</h3>
+              <p>Vidros e peças automotivas com qualidade</p>
+            </article>
 
+            <article class="topic">
+              <img src="./assets/seguro-de-automovel.svg" alt="Instalação" />
+              <h3>Entrega e instalação</h3>
+              <p>Instale em uma de nossas 85+ lojas</p>
+            </article>
+
+            <article class="topic">
+              <img src="./assets/forma-de-pagamento.svg" alt="Pagamento" />
+              <h3>Pagamento facilitado</h3>
+              <p>Até 10x sem juros</p>
+            </article>
+
+            <article class="topic">
+              <img src="./assets/garantido.svg" alt="Garantia" />
+              <h3>Garantia de até 1 ano</h3>
+              <p>Segurança total no serviço</p>
+            </article>
+          </div>
+
+          <div class="text">
+            <h2>VallCar é o nome certo</h2>
             <p>
-              Serviços Automotivos <br />
-              para você
+              Somos referência em soluções automotivas, oferecendo serviços
+              especializados em para-brisas, vidros e máquinas com qualidade,
+              segurança e agilidade. Atuamos com foco na excelência no
+              atendimento e na confiança dos nossos clientes, garantindo
+              serviços que preservam a integridade do seu veículo e a sua
+              segurança no dia a dia. Com presença regional e uma equipe
+              preparada, estamos prontos para atender com eficiência, sempre
+              respeitando prazos e oferecendo as melhores soluções do mercado.
             </p>
-          </article>
-          <img src="./assets/simbolo.svg" />
-          <article>
-            <h3>+ de 100 mil</h3>
-
-            <p>Clientes satisfeitos <br />atendidos</p>
-          </article>
+          </div>
         </div>
-        <div class="beneficios-lista">
-          <ul>
-            <li>
-              <img src="./assets/marca-de-verificacao.svg" />Lavagem com
-              vaporização
-            </li>
+      </section>
 
-            <li>
-              <img src="./assets/marca-de-verificacao.svg" />Lavagem com
-              vaporização
-            </li>
+      <!-- BENEFÍCIOS -->
+      <section id="beneficios" class="beneficios">
+        <div class="container">
+          <h2>Destaque no setor automotivo</h2>
 
-            <li>
-              <img src="./assets/marca-de-verificacao.svg" />Lavagem com
-              vaporização
-            </li>
+          <div class="beneficios-topicos">
+            <article>
+              <h3 class="counter" data-target="10">0</h3>
+              <p>Anos de experiência</p>
+            </article>
 
-            <li>
-              <img src="./assets/marca-de-verificacao.svg" />Lavagem com
-              vaporização
-            </li>
+            <article>
+              <h3 class="counter" data-target="18">0</h3>
+              <p>Serviços automotivos</p>
+            </article>
 
-            <li>
-              <img src="./assets/marca-de-verificacao.svg" />Lavagem com
-              vaporização
-            </li>
+            <article>
+              <span>+</span>
+              <h3 class="counter" data-target="100">0</h3>
 
-            <li>
-              <img src="./assets/marca-de-verificacao.svg" />Lavagem com
-              vaporização
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <img src="./assets/marca-de-verificacao.svg" />Lavagem com
-              vaporização
-            </li>
+              <p>Clientes atendidos</p>
+            </article>
+          </div>
 
-            <li>
-              <img src="./assets/marca-de-verificacao.svg" />Lavagem com
-              vaporização
-            </li>
-
-            <li>
-              <img src="./assets/marca-de-verificacao.svg" />Lavagem com
-              vaporização
-            </li>
-
-            <li>
-              <img src="./assets/marca-de-verificacao.svg" />Lavagem com
-              vaporização
-            </li>
-
-            <li>
-              <img src="./assets/marca-de-verificacao.svg" />Lavagem com
-              vaporização
-            </li>
-
-            <li>
-              <img src="./assets/marca-de-verificacao.svg" />Lavagem com
-              vaporização
-            </li>
+          <ul class="beneficios-lista">
+            <li>✔ Atendimento especializado</li>
+            <li>✔ Instalação rápida</li>
+            <li>✔ Peças originais</li>
+            <li>✔ Garantia estendida</li>
           </ul>
         </div>
       </section>
 
-      <!-- Depoimentos -->
-      <section id="depoimentos" class="depoimentos">
+      <!-- LOJAS + DEPOIMENTOS -->
+      <section id="lojas" class="lojas">
         <div class="container">
           <h2>Nossas Lojas</h2>
 
           <div class="grid">
-            <!-- LISTA -->
-            <div class="lista">
-              <div class="loja" onclick="mostrar(0)">Guarapuava</div>
-              <div class="loja" onclick="mostrar(1)">Cascavel</div>
-              <div class="loja" onclick="mostrar(2)">Foz do Iguaçú</div>
-              <div class="loja" onclick="mostrar(3)">Medianeira</div>
-              <div class="loja" onclick="mostrar(4)">Guaíra</div>
-              <div class="loja" onclick="mostrar(5)">Toleto</div>
-              <div class="loja" onclick="mostrar(6)">Pato Branco</div>
+            <div class="seletor-lojas">
+              <div class="loja-selecionada" onclick="toggleDropdown()">
+                <span id="nome-loja-atual">Selecione uma loja</span>
+                <i class="seta"></i>
+              </div>
+
+              <ul class="lista" id="lista-lojas">
+                <li class="loja" onclick="selecionarLoja(0, 'Guarapuava')">
+                  Guarapuava
+                </li>
+                <li class="loja" onclick="selecionarLoja(1, 'Cascavel')">
+                  Cascavel
+                </li>
+                <li class="loja" onclick="selecionarLoja(2, 'Foz do Iguaçu')">
+                  Foz do Iguaçu
+                </li>
+                <li class="loja" onclick="selecionarLoja(3, 'Medianeira')">
+                  Medianeira
+                </li>
+                <li class="loja" onclick="selecionarLoja(4, 'Guaíra')">
+                  Guaíra
+                </li>
+                <li class="loja" onclick="selecionarLoja(5, 'Toledo')">
+                  Toledo
+                </li>
+                <li class="loja" onclick="selecionarLoja(6, 'Pato Branco')">
+                  Pato Branco
+                </li>
+              </ul>
             </div>
 
-            <!-- DETALHES -->
             <div id="detalhes" class="detalhes">
-              Clique em uma loja para ver detalhes
+              <p>Selecione uma loja para ver detalhes</p>
             </div>
           </div>
         </div>
-        <div class="depoimentos-text">
-          <div class="depoimentos-title">
-            <h2>O que os clientes falam de nós</h2>
-            <h5>Avaliações Verificadas via Google</h5>
-          </div>
-          <div class="depoimentos-conteudo">
+      </section>
+
+      <!-- DEPOIMENTOS -->
+      <section id="depoimentos" class="depoimentos">
+        <h2>O que os clientes falam</h2>
+        <div class="slider-container">
+          <div class="slider-track">
             <blockquote>
-              "Loja muito boa, bom atendimento, realizaram uma reforma na loja e
-              ficou excelente! fizeram um otimo serviço em meu veiculo!"
-              <cite>joao Pedro Lima - ⭐⭐⭐⭐⭐</cite>
+              <p>Excelente atendimento e serviço impecável.</p>
+              <cite>João Pedro Lima ⭐⭐⭐⭐⭐</cite>
             </blockquote>
 
             <blockquote>
-              "Já precisei 2 vx de serviço deles sempre atendendo com onestidade
-              , e serviço sempre vem feito"
-              <cite>Jhonatan Wilian Pachesnik - ⭐⭐⭐⭐⭐</cite>
+              <p>Preço justo e equipe muito profissional.</p>
+              <cite>Jhonatan Pachesnik ⭐⭐⭐⭐⭐</cite>
             </blockquote>
 
             <blockquote>
-              "Fui muito bem atendido pelo Felipe o cara e bom de vendas vcs
-              estão de parabéns com os piazada de vcs foi top o atendimento
-              parabrisa bom de preço abraço piazadinha"
-              <cite>Leonel Bueno - ⭐⭐⭐⭐⭐</cite>
+              <p>Atendimento rápido e de qualidade.</p>
+              <cite>Leonel Bueno ⭐⭐⭐⭐⭐</cite>
             </blockquote>
 
             <blockquote>
-              "Ótimo Atendimento. Serviço de Ótima Qualidade. Preço Acessível!!!
-              L Super Recomendo."
-              <cite>Marcelo Iaras Júnior - ⭐⭐⭐⭐⭐</cite>
+              <p>Melhor custo-benefício da região, recomendo!</p>
+              <cite>Ana Souza ⭐⭐⭐⭐⭐</cite>
+            </blockquote>
+
+            <blockquote>
+              <p>Troca de para-brisa rápida e limpa.</p>
+              <cite>Marcos Oliveira ⭐⭐⭐⭐⭐</cite>
             </blockquote>
           </div>
         </div>
+        <div class="slider-pagination"></div>
       </section>
 
       <!-- CTA -->
-      <section id="cta" class="cta">
-        <h1>Especialistas em vidros <br />automotivos há anos</h1>
+      <section class="cta">
+        <div class="container">
+          <h2>
+            Especialistas em vidros <br />
+            automotivos há anos
+          </h2>
+        </div>
       </section>
 
-      <!-- Contato -->
+      <!-- CONTATO -->
       <section id="contato" class="contato">
-        <div class="contato-coluna1">
-          <img src="./assets/logo.png" />
-          <div class="redes-sociais">
-            <a href="#contato" class=""><img src="./assets/instagram.svg" /></a>
-            <a href="#contato" class=""><img src="./assets/facebook.svg" /></a>
+        <div class="container contato-grid">
+          <div>
+            <img src="./assets/logo.png" alt="VallCar" />
+            <div class="redes-sociais">
+              <a href="#"><img src="./assets/instagram.svg" /></a>
+              <a href="#"><img src="./assets/facebook.svg" /></a>
+            </div>
           </div>
-        </div>
 
-        <div class="contato-coluna2">
-          <button class="btn-faleconosco">Fale Conosco</button>
-          <a href="#contato" class="">Trabalhe conosto</a>
-          <a href="#contato" class="">Encontre uma loja</a>
+          <div class="coluna-menu">
+            <a href="#">Fale Conosco</a>
+            <a href="#">Trabalhe conosco</a>
+            <a href="#">Encontre uma loja</a>
+          </div>
         </div>
       </section>
     </main>
 
-    <!-- Rodapé -->
+    <!-- FOOTER -->
     <footer>
-      <div class="divider"></div>
       <p>© 2026 VallCar - Todos os direitos reservados</p>
     </footer>
-
-    <script>
-      const lojas = [
-        {
-          nome: "Guarapuava",
-          endereco: "Rua Exemplo, 123 - Centro",
-          whatsapp: "5511999999999",
-        },
-        {
-          nome: "Cascavel Zona Sul",
-          endereco: "Av. Exemplo, 456 - Zona Sul",
-          whatsapp: "5511888888888",
-        },
-        {
-          nome: "Loja Zona Norte",
-          endereco: "Rua Teste, 789 - Zona Norte",
-          whatsapp: "5511777777777",
-        },
-        {
-          nome: "Loja Zona Norte",
-          endereco: "Rua Teste, 789 - Zona Norte",
-          whatsapp: "5511777777777",
-        },
-        {
-          nome: "Loja Zona Norte",
-          endereco: "Rua Teste, 789 - Zona Norte",
-          whatsapp: "5511777777777",
-        },
-        {
-          nome: "Loja Zona Norte",
-          endereco: "Rua Teste, 789 - Zona Norte",
-          whatsapp: "5511777777777",
-        },
-      ];
-
-      function mostrar(index) {
-        const loja = lojas[index];
-
-        document.getElementById("detalhes").innerHTML = `
-      <h3>${loja.nome}</h3>
-      <p>${loja.endereco}</p>
-
-      <a class="btn-whats" target="_blank"
-        href="https://wa.me/${loja.whatsapp}">
-        Falar no WhatsApp
-      </a>
-    `;
-      }
-    </script>
   </body>
 </html>
